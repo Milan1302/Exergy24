@@ -75,7 +75,7 @@ export default function CompetitionCard(props) {
             <div className={"card m-auto " + q} >
                 <img src={myimg} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title">{props.title}</h5>
+                    <h5 className="card-title gradient-text">{props.title}</h5>
                     <p className={"card-text " + n}>{props.text}</p>
                     <div className="row">
                         <div className="col">

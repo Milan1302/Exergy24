@@ -7,7 +7,8 @@ export default function Carousel(props) {
                 <div className="carousel-item active">
                     <img src={exergy} className="d-block w-100" alt="..."/>
                         <div className="carousel-caption d-md-block">
-                            <h1>{props.pagename}</h1>
+                            <h1 className='gradient-text'>{props.pagename}</h1>
+                            <p className='gradient-text'>{props.text}</p>
                         </div>
                 </div>
      

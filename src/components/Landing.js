@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import $ from "jquery";
-import Text from "./Text.js";
+import img from '../images/timepass image.jpg'
 import video from '../images/landingvideo.mp4'
 function Landing(props) {
   var text = props.text.split("$");
@@ -12,9 +12,8 @@ function Landing(props) {
   return (
     <div className="container-fluid landing_cont">
       <video src={video} muted autoPlay></video>
-      <div className="landing_text">
-        <Text text={text[0]} size="10vw" iden="one" />
-        <Text text={text[1]} size="3vw" iden="two" />
+      <div className="image-container landing_text">
+        <img src="img" alt="" className="image-fade"/>
       </div>
     </div>
   );

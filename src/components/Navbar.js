@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import $ from 'jquery';
 import logo from '../images/timepass image.jpg'
+import { Link, Navigate } from 'react-router-dom';
 
 export default function Navibar() {
+    
     const navbar = document.getElementsByClassName('navbar');
 
     // Function to check if the navbar is at the top of the page
@@ -35,20 +38,20 @@ export default function Navibar() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="/">Home</a>
+                        <li className="nav-item" id='l1'>
+                            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Competitions</a>
+                        <li className="nav-item" id='l2'>
+                            <Link className="nav-link" to="/competitions">Competitions</Link>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Workshops</a>
+                        <li className="nav-item" id='l3'>
+                            <Link className="nav-link" to="/workshops">Workshops</Link>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Talks</a>
+                        <li className="nav-item" id='l4'>
+                            <Link className="nav-link" to="/talks">Talks</Link>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Campus Ambassador</a>
+                        <li className="nav-item" id='l5'>
+                            <Link className="nav-link" to="/">Campus Ambassador</Link>
                         </li>
                     </ul>
                 </div>
