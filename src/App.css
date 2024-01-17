@@ -263,6 +263,7 @@ video {
   width: 18rem;
   overflow: hidden;
 }
+
 /* .c .card:hover{
   border: 2px solid;
   border-image: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -371,7 +372,7 @@ body {
   background-color: black;
   height: 100vh;
   overflow-x: hidden;
-  font-family: "Playfair Display", serif;
+  font-family: "Open sans", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -383,7 +384,7 @@ body {
   width: 50px;
   z-index: -5;
 
-  background: radial-gradient(circle, #ff4500, #ff9900, #ffcc00, #ff4500);
+  background: radial-gradient(circle, #18191f, #18191f, #18191f, #18191f);
   box-shadow: 0 0 50px #ff4500,
     0 0 100px #ff4500,
     0 0 150px #ff4500,
@@ -692,16 +693,19 @@ body {
   display: inline-block;
   animation: pulse 2s forwards;
 }
-.carousel-new p{
+
+.carousel-new p {
   font-size: 5vw;
 }
+
 .carousel-new .img {
   max-height: 100vh;
   min-height: 35vh;
   height: 40vw;
 }
 
-.home, .myHome {
+.home,
+.myHome {
   width: 100vw;
   margin: 0px;
   padding: 0px;
@@ -718,29 +722,34 @@ body {
   margin: 0px;
   padding: 0px;
 }
-.myTalks{
+
+.myTalks {
   width: 100vw;
   height: 100vh;
   margin: 0px;
   padding: 0px;
 }
+
 .gradient-text {
-  background: linear-gradient(to right,#ff4500, #ff9900, #ffcc00, #ff9900,#ff4500);
+  background: linear-gradient(to right, #ff4500, #ff9900, #ffcc00, #ff9900, #ff4500);
   -webkit-background-clip: text;
   color: transparent;
 }
-.footer .col{
+
+.footer .col {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.footer .col .row{
+
+.footer .col .row {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
+
 .image-container {
   position: relative;
   overflow: hidden;
@@ -754,5 +763,6 @@ body {
   height: 100%;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
   z-index: 1;
-  transition: background 1s ease-out; /* Adjust the duration and easing as needed */
+  transition: background 1s ease-out;
+  /* Adjust the duration and easing as needed */
 }
